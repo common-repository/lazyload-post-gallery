@@ -1,0 +1,118 @@
+
+.lazyload-post-gallery-modal-link {
+    position: relative;
+    float: right;
+}
+
+.lazyload-post-gallery-modal {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 99999;
+    position: fixed;
+    pointer-events: none;
+    background: rgba(0,0,0,0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-transition: opacity 250ms ease-in;
+    -moz-transition: opacity 250ms ease-in;
+    transition: opacity 250ms ease-in;
+}
+
+.lazyload-post-gallery-modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lazyload-post-gallery-modal > div {
+    width: 400px;
+    background: #fff;
+    margin: 7% auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 5px 20px 13px 20px;
+    background: -o-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(232,232,232) 63%);
+    background: -moz-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(232,232,232) 63%);
+    background: -webkit-linear-gradient(bottom, rgb(245,245,245) 25%, rgb(232,232,232) 63%);
+}
+
+.lazyload-post-gallery-modal-close {
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+}
+
+.lazyload-post-gallery-modal-close:hover { color: #333; }
+
+#lazyload-post-gallery-contact input[type="text"],
+#lazyload-post-gallery-contact input[type="email"],
+#lazyload-post-gallery-contact input[type="url"],
+#lazyload-post-gallery-contact textarea,
+#lazyload-post-gallery-contact button[type="submit"] {
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 6px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#lazyload-post-gallery-contact input[type="text"],
+#lazyload-post-gallery-contact input[type="email"],
+#lazyload-post-gallery-contact input[type="tel"],
+#lazyload-post-gallery-contact input[type="url"],
+#lazyload-post-gallery-contact textarea {
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+}
+
+#lazyload-post-gallery-contact input[type="text"]:hover,
+#lazyload-post-gallery-contact input[type="email"]:hover,
+#lazyload-post-gallery-contact input[type="tel"]:hover,
+#lazyload-post-gallery-contact input[type="url"]:hover,
+#lazyload-post-gallery-contact textarea:hover {
+    -webkit-transition:border-color 0.3s ease-in-out;
+    -moz-transition:border-color 0.3s ease-in-out;
+    transition:border-color 0.3s ease-in-out;
+    border:1px solid #AAA;
+}
+
+#lazyload-post-gallery-contact textarea {
+    height:100px;
+    max-width:100%;
+    resize:none;
+    margin-bottom: 0px;
+}
+
+#lazyload-post-gallery-contact input:focus,
+#lazyload-post-gallery-contact textarea:focus {
+    outline:0;
+    border:1px solid #999;
+}
+
+::-webkit-input-placeholder { color:#888; }
+:-moz-placeholder { color:#888; }
+::-moz-placeholder { color:#888; }
+:-ms-input-placeholder { color:#888; }
+
+
+.lazyload-post-gallery-contact-valide, .lazyload-post-gallery-contact-error{
+    padding: 8px;
+    background-color: white;
+}
+.lazyload-post-gallery-contact-valide{
+    border-left: 4px solid #46b450;
+}
+.lazyload-post-gallery-contact-error{
+    border-left: 4px solid #dc3232;
+}
